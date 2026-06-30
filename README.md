@@ -126,4 +126,3 @@ And add to `style.css`:
 
 ---
 
-*Built for the Future Interns Full Stack Web Development Internship — 2026*
