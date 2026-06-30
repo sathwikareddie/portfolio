@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sathwika Reddy – Final-Year B.Tech IT Student & Aspiring Full Stack Developer. Portfolio showcasing projects, skills, and achievements." />
+  <meta name="keywords" content="Sathwika Reddy, Portfolio, B.Tech IT, Full Stack Developer, Python, Web Development, Hyderabad" />
+  <meta name="author" content="Sathwika Reddy" />
+  <title>Sathwika Reddy | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ LOADING SCREEN ══════════════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">SR<span class="loader-dot">.</span></div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ══ BACK TO TOP ════════════════════════════════════════ -->
+  <button id="backToTop" aria-label="Back to top">&#8679;</button>
+
+  <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">SR<span>.</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"          class="nav-link">Home</a></li>
+        <li><a href="#about"         class="nav-link">About</a></li>
+        <li><a href="#skills"        class="nav-link">Skills</a></li>
+        <li><a href="#projects"      class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#achievements"  class="nav-link">Achievements</a></li>
+        <li><a href="#resume"        class="nav-link">Resume</a></li>
+        <li><a href="#contact"       class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ═══════════════════════════════════════════════ -->
+  <section id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1 class="hero-name">Sathwika<br/><span class="hero-name-accent">Reddy</span></h1>
+      <div class="hero-typewriter">
+        <span class="tw-static">I'm a </span>
+        <span id="typewriter" class="tw-dynamic"></span>
+        <span class="tw-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Final-Year B.Tech IT Student passionate about technology, innovation, 
+        problem-solving, and continuous learning. Building the web one line at a time.
+      </p>
+      <div class="hero-buttons">
+        <a href="resume.pdf" download class="btn-primary">
+          <span>⬇</span> Download Resume
+        </a>
+        <a href="#contact" class="btn-outline">
+          <span>✉</span> Contact Me
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/Sathwika-Dommata" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="devicon-linkedin-plain"></i>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="devicon-github-original"></i>
+        </a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ═══════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">Get to know me</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col" data-aos="fade-right">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder">
+              <span>SR</span>
+              <p class="img-hint">Replace with your photo</p>
+            </div>
+            <div class="about-img-glow"></div>
+          </div>
+          <!-- Animated counters -->
+          <div class="counters-row">
+            <div class="counter-item">
+              <span class="counter" data-target="8.85">0</span>
+              <span class="counter-label">CGPA</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter" data-target="3">0</span><span class="counter-suffix">+</span>
+              <span class="counter-label">Projects</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter" data-target="5">0</span><span class="counter-suffix">+</span>
+              <span class="counter-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-col" data-aos="fade-left">
+          <h3 class="about-subheading">Final-Year B.Tech IT Student &amp; Aspiring Developer</h3>
+          <p class="about-body">
+            I'm <strong>Dommata Sathwika</strong>, a final-year Information Technology student at 
+            <strong>Joginpally B.R. Engineering College, Hyderabad</strong>, with a CGPA of 
+            <strong>8.85</strong>. I'm passionate about building impactful digital experiences 
+            through clean code and creative problem-solving.
+          </p>
+          <p class="about-body">
+            My journey spans Python development, web technologies, machine learning, and cloud computing. 
+            I've completed a 10-week virtual internship in Python Full Stack Development and hold a 
+            <strong>Generative AI Literacy certification</strong> from FutureSkills Prime &amp; NASSCOM.
+          </p>
+
+          <div class="career-objective">
+            <h4>🎯 Career Objective</h4>
+            <p>
+              To leverage my technical skills and academic excellence to contribute meaningfully to 
+              innovative technology teams, while continuously growing as a full-stack developer and 
+              problem solver in a dynamic professional environment.
+            </p>
+          </div>
+
+          <div class="strengths-grid">
+            <div class="strength-tag">🔥 Dedicated</div>
+            <div class="strength-tag">🔄 Adaptable</div>
+            <div class="strength-tag">💪 Resilient</div>
+            <div class="strength-tag">🤝 Team Player</div>
+            <div class="strength-tag">⚡ Quick Learner</div>
+            <div class="strength-tag">🎯 Goal-Oriented</div>
+          </div>
+
+          <!-- Education timeline -->
+          <div class="edu-timeline">
+            <div class="edu-entry">
+              <div class="edu-dot"></div>
+              <div class="edu-info">
+                <strong>B.Tech – Information Technology</strong>
+                <span>JBREC, Hyderabad &nbsp;·&nbsp; 2023–2027 &nbsp;·&nbsp; CGPA: 8.85</span>
+              </div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-dot"></div>
+              <div class="edu-info">
+                <strong>Board of Intermediate Education</strong>
+                <span>Sree Chaithanya Junior College, Karimnagar &nbsp;·&nbsp; 2021–2023 &nbsp;·&nbsp; 98.4%</span>
+              </div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-dot"></div>
+              <div class="edu-info">
+                <strong>SSC – Board of Secondary Education</strong>
+                <span>Z P High School, Shanigaram &nbsp;·&nbsp; 2021 &nbsp;·&nbsp; CGPA: 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ═════════════════════════════════════════════ -->
+  <section id="skills" class="section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">What I know</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+
+      <div class="skills-layout">
+        <!-- Technical Skills -->
+        <div class="skills-tech" data-aos="fade-right">
+          <h3 class="skills-sub-heading">Technical Skills</h3>
+          <div class="tech-icons-grid">
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"/>
+              <span>HTML5</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"/>
+              <span>CSS3</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
+              <span>Python</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/>
+              <span>Java</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"/>
+              <span>SQL</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
+              <span>Git</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="invert-in-dark"/>
+              <span>GitHub</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS"/>
+              <span>AWS</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/>
+              <span>Linux</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"/>
+              <span>VS Code</span>
+            </div>
+            <div class="tech-pill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter"/>
+              <span>Jupyter</span>
+            </div>
+          </div>
+
+          <h3 class="skills-sub-heading learning-heading" style="margin-top:2.2rem;">
+            🌱 Currently Learning — MERN Stack
+          </h3>
+          <div class="tech-icons-grid">
+            <div class="tech-pill learning">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/>
+              <span>MongoDB</span>
+              <span class="learning-tag">Learning</span>
+            </div>
+            <div class="tech-pill learning">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" class="invert-in-dark"/>
+              <span>Express.js</span>
+              <span class="learning-tag">Learning</span>
+            </div>
+            <div class="tech-pill learning">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js"/>
+              <span>React.js</span>
+              <span class="learning-tag">Learning</span>
+            </div>
+            <div class="tech-pill learning">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"/>
+              <span>Node.js</span>
+              <span class="learning-tag">Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Progress Bars -->
+        <div class="skills-bars" data-aos="fade-left">
+          <h3 class="skills-sub-heading">Proficiency</h3>
+          <div class="bar-list">
+            <div class="bar-item">
+              <div class="bar-label"><span>Python</span><span>85%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>HTML &amp; CSS</span><span>90%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>JavaScript</span><span>75%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>SQL / MySQL</span><span>80%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>Java</span><span>65%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>AWS</span><span>60%</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="60"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label"><span>React.js <em class="bar-tag">learning</em></span><span>40%</span></div>
+              <div class="bar-track"><div class="bar-fill learning-fill" data-width="40"></div></div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <h3 class="skills-sub-heading" style="margin-top:2.5rem;">Soft Skills</h3>
+          <div class="soft-skills-row">
+            <div class="soft-pill">💬 Communication</div>
+            <div class="soft-pill">👑 Leadership</div>
+            <div class="soft-pill">🧩 Problem Solving</div>
+            <div class="soft-pill">🤝 Teamwork</div>
+            <div class="soft-pill">⏱ Time Management</div>
+            <div class="soft-pill">🔍 Attention to Detail</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">What I've built</span>
+        <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">🤖</div>
+            <div class="project-overlay">
+              <a href="#" class="proj-btn" title="View Code">⌨ Code</a>
+              <a href="#" class="proj-btn" title="Live Demo">🔗 Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-badge">ML Project</div>
+            <h3>SMS / Email Spam Detection</h3>
+            <p>A machine learning system that classifies messages as spam or legitimate using NLP text classification techniques, improving communication efficiency.</p>
+            <div class="project-tags">
+              <span>Python</span><span>ML</span><span>NLP</span><span>Scikit-learn</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img-wrap">
+            <div class="project-img-placeholder">🌐</div>
+            <div class="project-overlay">
+              <a href="#" class="proj-btn" title="View Code">⌨ Code</a>
+              <a href="#" class="proj-btn" title="Live Demo">🔗 Demo</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-badge">Web Dev</div>
+            <h3>Personal Portfolio Website</h3>
+            <p>This responsive portfolio website built as Task 1 of the Future Interns Full Stack Web Development internship — featuring particles, animations, and dark/light mode.</p>
+            <div class="project-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>AOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card add-project" data-aos="fade-up" data-aos-delay="200">
+          <div class="add-icon">+</div>
+          <h3>More Projects Coming Soon</h3>
+          <p>Future Interns tasks and personal projects will be added here as they're completed.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CERTIFICATIONS ══════════════════════════════════════ -->
+  <section id="certifications" class="section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">What I've earned</span>
+        <h2 class="section-title">My <span class="accent">Certifications</span></h2>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="cert-icon">🤖</div>
+          <div class="cert-body">
+            <h3>Generative AI Literacy</h3>
+            <span class="cert-issuer">FutureSkills Prime &amp; NASSCOM</span>
+            <span class="cert-date">2024</span>
+          </div>
+          <div class="cert-ribbon">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="cert-icon">🐍</div>
+          <div class="cert-body">
+            <h3>Python Full Stack Development</h3>
+            <span class="cert-issuer">Virtual Internship Program</span>
+            <span class="cert-date">10 Weeks · 2024</span>
+          </div>
+          <div class="cert-ribbon">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="cert-icon">🧠</div>
+          <div class="cert-body">
+            <h3>Google AI/ML Concepts</h3>
+            <span class="cert-issuer">Google</span>
+            <span class="cert-date">2024</span>
+          </div>
+          <div class="cert-ribbon">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="cert-icon">☁️</div>
+          <div class="cert-body">
+            <h3>AWS Cloud Fundamentals</h3>
+            <span class="cert-issuer">Amazon Web Services</span>
+            <span class="cert-date">2024</span>
+          </div>
+          <div class="cert-ribbon">✓ Verified</div>
+        </div>
+
+        <div class="cert-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="cert-icon">🌐</div>
+          <div class="cert-body">
+            <h3>Full Stack Web Development</h3>
+            <span class="cert-issuer">Future Interns</span>
+            <span class="cert-date">2026 · In Progress</span>
+          </div>
+          <div class="cert-ribbon ongoing">⏳ Ongoing</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ACHIEVEMENTS ════════════════════════════════════════ -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">My milestones</span>
+        <h2 class="section-title">Achievements &amp; <span class="accent">Activities</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="ach-icon">🎓</div>
+          <div class="ach-body">
+            <span class="ach-category">Academic</span>
+            <h3>CGPA 8.85</h3>
+            <p>Consistently maintained high academic performance throughout the B.Tech IT program at JBREC, Hyderabad.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="ach-icon">🏆</div>
+          <div class="ach-body">
+            <span class="ach-category">Academic</span>
+            <h3>98.4% in Intermediate</h3>
+            <p>Scored an outstanding 98.4% in the Board of Intermediate Education, demonstrating exceptional dedication.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="ach-icon">💯</div>
+          <div class="ach-body">
+            <span class="ach-category">Academic</span>
+            <h3>Perfect 10 CGPA – SSC</h3>
+            <p>Achieved a perfect CGPA of 10 in the Board of Secondary Education — a testament to hard work and focus.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="ach-icon">💼</div>
+          <div class="ach-body">
+            <span class="ach-category">Internship</span>
+            <h3>Full Stack Web Dev Intern</h3>
+            <p>Selected for the Future Interns Full Stack Web Development internship program in 2026.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="ach-icon">🤖</div>
+          <div class="ach-body">
+            <span class="ach-category">Workshop</span>
+            <h3>AI/ML Workshop</h3>
+            <p>Attended hands-on workshop on Artificial Intelligence and Machine Learning concepts, gaining practical exposure.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="ach-icon">🚀</div>
+          <div class="ach-body">
+            <span class="ach-category">Extracurricular</span>
+            <h3>Tech Club Member</h3>
+            <p>Active contributor to the college tech community — participating in coding events, seminars, and peer learning sessions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ RESUME ══════════════════════════════════════════════ -->
+  <section id="resume" class="section-alt">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">My credentials</span>
+        <h2 class="section-title">My <span class="accent">Resume</span></h2>
+      </div>
+
+      <div class="resume-layout" data-aos="fade-up">
+        <div class="resume-preview">
+          <div class="resume-mock">
+            <div class="resume-mock-header">
+              <div class="resume-mock-name">Dommata Sathwika</div>
+              <div class="resume-mock-role">B.Tech IT Student · Developer</div>
+            </div>
+            <div class="resume-mock-body">
+              <div class="resume-mock-line w-full"></div>
+              <div class="resume-mock-line w-3/4"></div>
+              <div class="resume-mock-section">Education</div>
+              <div class="resume-mock-line w-full"></div>
+              <div class="resume-mock-line w-5/6"></div>
+              <div class="resume-mock-section">Skills</div>
+              <div class="resume-mock-chips">
+                <span>Python</span><span>HTML</span><span>CSS</span>
+                <span>JS</span><span>SQL</span><span>AWS</span>
+              </div>
+              <div class="resume-mock-section">Projects</div>
+              <div class="resume-mock-line w-full"></div>
+              <div class="resume-mock-line w-2/3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-cta-col">
+          <h3>Ready to make an impression?</h3>
+          <p>My resume outlines my education, technical skills, projects, certifications, and internship experience — tailored for placement drives and professional opportunities.</p>
+          <a href="resume.pdf" download class="btn-primary large">
+            <span>⬇</span> Download Resume (PDF)
+          </a>
+          <p class="resume-note">💡 Replace <code>resume.pdf</code> with your actual resume file in the project folder.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ═════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-eyebrow">Let's connect</span>
+        <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Form -->
+        <div class="contact-form-wrap" data-aos="fade-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Full Name *</label>
+                <input type="text" id="cName" name="name" placeholder="Your Name" required />
+                <span class="form-error" id="nameErr"></span>
+              </div>
+              <div class="form-group">
+                <label for="cEmail">Email Address *</label>
+                <input type="email" id="cEmail" name="email" placeholder="you@example.com" required />
+                <span class="form-error" id="emailErr"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cSubject">Subject</label>
+              <input type="text" id="cSubject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="cMessage">Message *</label>
+              <textarea id="cMessage" name="message" rows="5" placeholder="Hi Sathwika, I'd like to..." required></textarea>
+              <span class="form-error" id="msgErr"></span>
+            </div>
+            <button type="submit" class="btn-primary full">Send Message ✉</button>
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-col" data-aos="fade-left">
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:sathwikareddie25@gmail.com" class="contact-value">sathwikareddie25@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+919346658116" class="contact-value">+91 93466 58116</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Hyderabad, Telangana, India</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <h4>Find me on</h4>
+            <div class="social-row">
+              <a href="https://www.linkedin.com/in/Sathwika-Dommata" target="_blank" rel="noopener" class="social-btn linkedin">
+                <i class="devicon-linkedin-plain"></i> LinkedIn
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener" class="social-btn github">
+                <i class="devicon-github-original"></i> GitHub
+              </a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener" class="social-btn instagram">
+                📸 Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══════════════════════════════════════════════ -->
+  <footer>
+    <div class="container footer-inner">
+      <p>Designed &amp; Built by <span class="accent">Dommata Sathwika</span></p>
+      <p>© 2026 · All Rights Reserved</p>
+      <p>Built with ❤️ using HTML · CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
